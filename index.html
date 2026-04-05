@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorpresa</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+      background: #f0f0f0;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 10px;
+      border: none;
+      background: blue;
+      color: white;
+    }
+
+    #troll {
+      display: none;
+      margin-top: 30px;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>para ver la imagen preciona en el boton de abajo </h1>
+
+<button onclick="mostrarTroll()">Presionar</button>
+
+<div id="troll">
+  <h2>😂 pichi 😂</h2>
+  <img src="img/mono.jpg" alt="troll">
+</div>
+
+<script>
+  function mostrarTroll() {
+    document.getElementById("troll").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
